@@ -2,7 +2,11 @@
   "name": "@fret/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx run-many --target=serve --all --parallel --output-style=stream",
+    "build": "nx run-many --target=build --all --parallel --output-style=stream",
+    "test": "nx run-many --target=test --all --parallel --output-style=stream"
+  },
   "private": true,
   "dependencies": {
     "@swc/helpers": "~0.5.0",
